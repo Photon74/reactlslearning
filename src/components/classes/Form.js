@@ -7,13 +7,11 @@ export class Form extends Component{
         count: 0,
     }
 
-    handlChange = (event) => {
-        //console.log(event.target.value);
+    handleChange = (event) => {
         this.setState({ name: event.target.value })
     }
 
-    handlClick = (event) => {
-        //console.log(event.target.value);
+    handleClick = (event) => {
         this.setState({ count: this.state.count + 1 })
         //this.setState((prevState) => ({ count: prevState.count + 1}))
     }
@@ -23,9 +21,9 @@ export class Form extends Component{
             <>
                 <h1>Classes Conponents</h1>
                 <h2>Name: {this.state.name}</h2>
-                <input type="text" onChange={this.handlChange} />
+                <input type="text" onChange={this.handleChange} />
                 <p>COUNT: {this.state.count}</p>
-                <button onClick={this.handlClick}>Click</button>
+                <button onClick={this.handleClick}>Click</button>
             </>
         )
     }

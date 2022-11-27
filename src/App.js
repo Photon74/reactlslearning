@@ -1,11 +1,14 @@
-import { Form } from "./components/classes/Form"
+import { Form as ClassForm } from "./components/classes/Form"
+import { Form as FuncForm } from "./components/func/Form"
 
 export function App(){
     return (
-        <div>
+        <>
             <h1>Hello world!!!</h1>
-            <Form></Form>
-        </div>
+            <ClassForm></ClassForm>
+            <hr />
+            <FuncForm></FuncForm>
+        </>
     )
 }
 
