@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Form as ClassForm } from "./components/classes/Form"
 import { Form as FuncForm } from "./components/func/Form"
+import { Message } from "./components/func/Message"
 
 import './App.css'
 
@@ -10,7 +11,9 @@ export function App(){
 
     return (
         <div className="App-header">
+            <Message messageText='Props message!' />
             <h1>Hello world!!!</h1>
+            <hr />
             <ClassForm></ClassForm>
             <hr />
             <button onClick={() => setToggle(!toggle)}>{toggle ? 'Hide' : 'Show'}</button>
