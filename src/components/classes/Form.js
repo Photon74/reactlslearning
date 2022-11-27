@@ -19,7 +19,7 @@ export class Form extends Component{
     render(){
         return(
             <>
-                <h1>Classes Conponents</h1>
+                <h1>Class Conponent</h1>
                 <h2>Name: {this.state.name}</h2>
                 <input type="text" onChange={this.handleChange} />
                 <p>COUNT: {this.state.count}</p>
