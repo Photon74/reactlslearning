@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import styles from './Form.module.css'
 
-export function Form(){
+export function Form(props){
     const[name, setName] = useState('Dodo')
     const[count, setCount] = useState(0)
 
@@ -16,7 +16,7 @@ export function Form(){
 
     return(
         <>
-            <h1 style={{ color: 'green'}}>Function Component</h1>
+            <h1 style={{ color: 'green'}}>{props.title}</h1>
             <h2 className={styles.border}>Name: {name}</h2>
             <input type="text" onChange={handleChange} />
             <p>COUNT: {count}</p>

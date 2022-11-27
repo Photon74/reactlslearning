@@ -12,7 +12,7 @@ export function App(){
             <ClassForm></ClassForm>
             <hr />
             <button onClick={() => setToggle(!toggle)}>{toggle ? 'Hide' : 'Show'}</button>
-            {toggle && <FuncForm />}
+            {toggle && <FuncForm title='Function Component'/>}
             <ul>
                 {arr.map((item) => (
                     <li>{item.name}</li>
