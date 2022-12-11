@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import { Form as ClassForm } from "./components/classes/Form"
+import { Form as FuncForm } from "./components/func/Form"
+import { Message } from "./components/func/Message"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+
+export function App(){
+    const[toggle, setToggle] = useState(true)
+    const[arr, setArr] = useState([{name: 'Dida'}, {name: 'Doda'}, {name: 'Duda'}, {name: 'Dada'}])
+
+    return (
+        <div className="App-header">
+            <Message messageText='Props message!' />
+            <h1>Hello world!!!</h1>
+            <hr />
+            <ClassForm></ClassForm>
+            <hr />
+            <button onClick={() => setToggle(!toggle)}>{toggle ? 'Hide' : 'Show'}</button>
+            {toggle && <FuncForm title='Function Component'/>}
+            <ul>
+                {arr.map((item) => (
+                    <li>{item.name}</li>
+                ))}
+            </ul>
+        </div>
+    )
 }
 
-export default App;
+// export default App
