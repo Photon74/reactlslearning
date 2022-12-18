@@ -1,7 +1,7 @@
-export function Button(props){
-    return(
-        <>
-            <button {...props}>{props.children}</button>
-        </>
-    )
+export function Button(props) {
+  return (
+    <>
+      <button {...props}>{props.children}</button>
+    </>
+  )
 }
