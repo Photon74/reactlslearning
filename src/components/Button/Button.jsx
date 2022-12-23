@@ -1,7 +1,15 @@
+import IButton from '@mui/material/Button'
+
 export function Button(props) {
   return (
     <>
-      <button {...props}>{props.children}</button>
+      <IButton
+        type={props.type}
+        variant="contained"
+        size="small"
+      >
+        {props.children}
+      </IButton>
     </>
   )
 }
