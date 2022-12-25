@@ -1,8 +1,35 @@
-.App-header {
-    background-color: #282c34;
-    display: flex;
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.chatlist {
+  background: rgb(224, 224, 224);
+  flex: auto;
+}
+.chat {
+  display: flex;
+  flex: 0 0 500px;
+  flex-direction: column;
+  align-content: center;
+}
+.form {
+  background: rgb(184, 215, 144);
+  flex: auto;
+  align-content: center;
+}
+.messages {
+  background: rgb(234, 234, 182);
+  flex: auto;
+  align-content: center;
+}
+div {
+  margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .container {
     flex-direction: column;
-    font-size: calc(5px + 2vmin);
-    color: white;
-    }
-    
+  }
+}
