@@ -1,3 +1,7 @@
+h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .container {
   width: 100%;
   max-width: 960px;
@@ -6,7 +10,7 @@
   flex-wrap: wrap;
 }
 .chatlist {
-  background: rgb(224, 224, 224);
+  /* background: rgb(224, 224, 224); */
   flex: auto;
 }
 .chat {
@@ -16,18 +20,17 @@
   align-content: center;
 }
 .form {
-  background: rgb(184, 215, 144);
+  max-height: 90px;
+  /* background: rgb(184, 215, 144); */
   flex: auto;
   align-content: center;
 }
 .messages {
-  background: rgb(234, 234, 182);
+  /* background: rgb(234, 234, 182); */
   flex: auto;
   align-content: center;
 }
-div {
-  margin: auto;
-}
+
 @media screen and (max-width: 500px) {
   .container {
     flex-direction: column;

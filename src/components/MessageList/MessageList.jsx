@@ -1,6 +1,8 @@
-// import { render } from "react"
+import { useParams } from "react-router-dom"
 
 export function MessageList({ messages }) {
+  const chatId = useParams()
+
   return (
     <>
       <h1>Messages</h1>
